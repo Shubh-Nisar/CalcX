@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="about.css" />
+    <title>ABOUT</title>
+    <link rel="icon" href="icon.jpeg" />
+    <style>
+      body{
+        background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+      }
+      header h1{
+        font-weight: 150;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="center-align grey-text text-lighten-5">About the Creators</h1>
+    </header>
+    <section class="section section-about center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="{% static 'images/shubh2.jpg' %}" alt="" id="image" class="responsive-img">
+            </div>
+
+            <span class="card-title">
+              <h5>Shubh Nisar</h5>
+            </span>
+            
+            <div class="card-content">
+              <p class="flow-text">Computer Engineering Student at Dwarkadas J. Sanghvi College Of Engineering</p>
+            </div>
+
+            <div class="card-action">
+              <a href="https://www.instagram.com/shubh_nisar.28/" class="pink-text"><i class="fa fa-instagram fa-3x"></i></a>
+              <a href="https://github.com/Shubh-Nisar" class="black-text"><i class="fa fa-github fa-3x"></i></a>
+              <a href="https://www.linkedin.com/in/shubh-nisar-89a6a31aa/" class="blue-text"><i class="fa fa-linkedin fa-3x"></i></a>
+            </div>
+
+          </div>
+        </div>
+         
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-image">
+            <img src="{% static 'images/tanay.jpg' %}" alt="" id="image" class="responsive-img">
+          </div>
+          <span class="card-title">
+            <h5>Tanay Naik</h5>
+          </span>
+          
+          <div class="card-content">
+            <p class="flow-text">Computer Engineering Student at Dwarkadas J. Sanghvi College Of Engineering</p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.instagram.com/_tanay_naik/" class="pink-text"><i class="fa fa-instagram fa-3x"></i></a>
+            <a href="https://github.com/tanaynaik2001" class="black-text"><i class="fa fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/tanay-naik-9693831a4/" class="blue-text"><i class="fa fa-linkedin fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+     
+    
+    </div>
+  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
