@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns=[
     path('quadratic',views.quadratic,name='quadratic'),
-    path('quadraticForm',views.quadraticForm,name='quadraticForm'),
+    # path('quadraticForm',views.quadraticForm,name='quadraticForm'),
 ]
