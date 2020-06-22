@@ -20,5 +20,6 @@ urlpatterns = [
     path('',include('home.urls')),
     path('admin/', admin.site.urls),
     path('about/',include('about.urls')),
-    path('quadratic/',include('quadratic.urls'))
+    path('quadratic/',include('quadratic.urls')),
+    path('acircle/', include('acircle.urls')),
 ]
