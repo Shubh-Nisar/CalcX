@@ -1,0 +1,91 @@
+{% block content %}
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>CalcX | Volume of a Sphere</title>
+      <style>
+            #calcX{
+                margin-left:auto;
+                margin-right:auto;
+                width:50% !important;
+                border:3px #333 solid;
+                border-radius:8px;
+                padding:3px;
+            }
+
+            #result{
+                text-align:center;
+                border: 3px #333 solid;
+                border-radius:8px;
+                width:50% !important;
+                margin-left:auto;
+                margin-right:auto;
+                margin-top:20px;
+                padding:10px;
+            }
+
+            #position{
+                margin-right:10%;
+            }
+
+            @media(min-width:900px){
+                #position{
+                    margin-right:7%;
+                }
+            }
+            @media(max-width:500px){
+                #position{
+                    margin-right:20%;
+                }
+                #result{
+                    width:95% !important;
+                }
+            }
+            @media(max-width:350px){
+                #calcX{
+                    width:75% !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class='container'>
+            <h1 class="center-align border" id='calcX'>CalcX</h1>
+        <h3 class='center-align'>Volume of a Sphere</h3>
+         <form action='vcircleForm' method='POST' class='center-align'>
+            {% csrf_token %}
+            <div class="row">
+                <div class="input-field">
+                    <input id="cirlce_rad" type="number" class="validate" name='radCircle'>
+                    <label for="circleRad">Radius Of the Sphere</label>
+                </div>
+            </div>
+            <input type='submit' value='Submit' class='btn'>
+         </form>
+
+         <h5 id='result'>Volume of a Sphere = {{volume}}</h5>
+
+         <div class="fixed-action-btn">
+        <a href="/about/about" class="btn-floating btn-large waves-effect waves-light red lighten-1 white-text">
+        About</a>
+         </div>
+
+         <div class="fixed-action-btn" id='position'>
+        <a href="/" class="btn-floating btn-large waves-effect waves-light red lighten-1 white-text">
+        Home</a>
+    </div>
+        </div>
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+       <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+  </html>
+  {% endblock %}
