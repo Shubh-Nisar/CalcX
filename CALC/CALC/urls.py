@@ -28,4 +28,5 @@ urlpatterns = [
     path('vcone/',include('vcone.urls')),
     path('shell/',include('shell.urls')),
     path('sacircle/',include('sacircle.urls')),
+    path('log/',include('log.urls'))
 ]
