@@ -24,4 +24,5 @@ urlpatterns = [
     path('acircle/', include('acircle.urls')),
     path('vcircle/',include('vcircle.urls')),
     path('asector/',include('asector.urls')),
+    path('biquadratic/',include('biquadratic.urls'))
 ]
